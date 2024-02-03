@@ -1,0 +1,18 @@
+.profile{
+    height: 250px;
+}
+.profile-image{
+    width: 150px;
+    height: 150px;
+}
+.slot{
+    border: 2px solid var(--theme-voilet);
+    color: var(--theme-voilet);
+}
+/* change it fix it */
+.slot-date{
+    width: 60px;
+}
+.slot-time{
+    width: 100px;
+}

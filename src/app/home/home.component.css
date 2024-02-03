@@ -1,0 +1,24 @@
+.username{
+    font-size: 25px;
+    font-weight: bold;
+}
+.card-service{
+    width: 130px;
+    height: 130px;
+}
+.border-service{
+    border: 1px solid var(--theme-voilet);
+}
+.icon-service{
+    font-size: 30px;
+    color: var(--theme-voilet);
+}
+
+.card-shop{
+    border: var(--border) !important;
+    
+}
+.shop-image{
+    width: 150px;
+    height: 150px;
+}

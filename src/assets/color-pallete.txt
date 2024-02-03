@@ -1,0 +1,8 @@
+-------main-------
+gray--- #eff0ec
+dark blue--- #1e2330
+voilet --#502274
+voilet --#8129d9
+seasalt---- #f3f3f1
+sky-blue --- #2665d6
+border 1px solid rgba(0, 0, 0, 0.08);

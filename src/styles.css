@@ -1,1 +1,63 @@
 /* You can add global styles to this file, and also import other style files */
+/* // <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 300 to 800
+
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+/* .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+  
+:root{
+    --theme-white:#ffffff;
+    --theme-seasalt:#f3f3f1;
+    --theme-gray:#eff0ec;
+    --theme-darkblue:#1e2330;
+    --theme-black:#000000;
+    --theme-yellow:#fdc500;
+    --theme-skyblue:#2665d6;
+    --theme-voilet-v1:#502274;
+    --theme-voilet-v2:#8129d9;
+    --theme-voilet:#4d13be;
+    --border:1px solid rgba(0, 0, 0, 0.08);
+}
+
+body{
+    font-family: "Open Sans", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 400 !important;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+    background-color: var(--theme-white) !important;
+    color: var(--theme-black) !important;
+}
+
+.heading{
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    color: var(--theme-black);
+}
+
+.bg-gray{
+  background-color: var(--theme-gray);
+}
+
+.card{
+    border: none !important;
+}
+
+.button{
+    background-color: var(--theme-voilet) !important;
+    color: var(--theme-white) !important;
+}
