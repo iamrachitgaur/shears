@@ -1,10 +1,10 @@
 const express = require('express');
-const database = require('./db/database')
+const database = require('./server/db/database')
 const app = express();
 const port = process.env.PORT || 4200;
-const userRouter = require('./routes/userRouter');
-const shopRouter = require('./routes/shopRouter');
-const timeSlotRouter = require('./routes/timeSlotRouter');
+const userRouter = require('./server/routes/userRouter');
+const shopRouter = require('./server/routes/shopRouter');
+const timeSlotRouter = require('./server/routes/timeSlotRouter');
 
 app.use(express.static('./dist/shears/'))
 app.use(express.json())
