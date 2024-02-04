@@ -7,7 +7,7 @@ const auth = async (req,res,next)=>{
         if(!token){
            return req.status(403)
         }
-        const decode = jwt.verify(token,'shears')
+        const decode = jwt.verify(token,process.env.JWT_SECRET)
         const user = await model.findOne({_id:decode._id,'tokens.token':token})
         if(!user){
             throw new Error()

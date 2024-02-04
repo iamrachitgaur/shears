@@ -66,7 +66,7 @@ schema.statics.findByCredentials = async function(email,password){
 
 schema.methods.generateAuthToken = async function(){
     const user = this
-    const token = jwt.sign({_id:user._id.toString()},'shears')
+    const token = jwt.sign({_id:user._id.toString()},process.env.JWT_SECRET)
     if(user.tokens.length >= 4){
         delete user.tokens[0]
      }

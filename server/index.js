@@ -6,14 +6,13 @@ const userRouter = require('./routes/userRouter');
 const shopRouter = require('./routes/shopRouter');
 const timeSlotRouter = require('./routes/timeSlotRouter');
 
-// app.use(express.static('./dist/eshopping/'));
+app.use(express.static('./dist/shears/'))
 app.use(express.json())
 app.use('/userApi',userRouter)
 app.use('/shopApi',shopRouter)
 app.use('/timeSlotApi',timeSlotRouter)
-// app.get('/*', (req, res) =>
-//     res.sendFile('index.html',{root:'./dist/eshopping/'})
-// );
+app.get('/*', (req, res) =>
+    res.sendFile('index.html',{root:'./dist/shears/'})
+);
 
-// Start the app by listening on the default Heroku port
 app.listen(port,()=>{console.log(`app listen on port : ${port}`)});
