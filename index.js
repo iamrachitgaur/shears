@@ -12,7 +12,7 @@ app.use('/userApi',userRouter)
 app.use('/shopApi',shopRouter)
 app.use('/timeSlotApi',timeSlotRouter)
 app.get('/*', (req, res) =>
-    res.sendFile('index.html',{root:`${__dirname}/dist/shears/index.html`})
+    res.sendFile('index.html',{root:`${__dirname}/dist/shears/`})
 );
 
 app.listen(port,()=>{console.log(`app listen on port : ${port}`)});
