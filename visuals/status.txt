@@ -1,0 +1,7 @@
+#For env-cmd
+   "dev": " env-cmd -f ./config/dev.env nodemon ../index.js"
+   in package.json
+   use cmd `npm run dev`
+
+   #or free uri
+   dont commit it k choose one...
