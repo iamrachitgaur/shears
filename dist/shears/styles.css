@@ -47,6 +47,9 @@ body{
 .bg-gray{
   background-color: var(--theme-gray);
 }
+.active{
+  color: var(--theme-voilet) !important;
+}
 .card{
     border: none !important;
 }

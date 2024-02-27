@@ -5,9 +5,11 @@ const port = process.env.PORT || 4200;
 const userRouter = require('./server/routes/userRouter');
 const shopRouter = require('./server/routes/shopRouter');
 const timeSlotRouter = require('./server/routes/timeSlotRouter');
+const cloudinary = require('./server/middleware/cloudinary');
 
 app.use(express.static('./dist/shears/'))
 app.use(express.json())
+
 app.use('/userApi',userRouter)
 app.use('/shopApi',shopRouter)
 app.use('/timeSlotApi',timeSlotRouter)

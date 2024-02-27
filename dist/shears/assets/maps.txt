@@ -1,0 +1,3 @@
+for coodinates - Geocoding API Playground
+for place - Search Box API Playground
+address - https://www.mapbox.com/address-autofill

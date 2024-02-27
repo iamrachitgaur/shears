@@ -9,6 +9,11 @@ const schema = mongoose.Schema({
         trim:true,
         lowercase:true
     },
+    shop_image:{
+        public_id:{type:String},
+        url:{type:String}
+    },
+    city:{type:String,required:true,trim:true,lowercase:true},
     owner:[{
         owner_id:{type:mongoose.Schema.ObjectId}
     }],

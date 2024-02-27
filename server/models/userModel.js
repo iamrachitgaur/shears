@@ -30,6 +30,10 @@ const schema = mongoose.Schema({
         trim:true,
         min:6
     },
+    profile:{
+        public_id:{type:String},
+        url:{type:String}
+    },
     bussiness_account:{
         type:Boolean,
         required:true,
@@ -66,7 +70,7 @@ schema.statics.findByCredentials = async function(email,password){
 
 schema.methods.generateAuthToken = async function(){
     const user = this
-    const token = jwt.sign({_id:user._id.toString()},process.env.JWT_SECRET)
+    const token = jwt.sign({_id:user._id.toString()},"shears")
     if(user.tokens.length >= 4){
         delete user.tokens[0]
      }

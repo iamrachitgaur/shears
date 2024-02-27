@@ -32,4 +32,15 @@ router.get('/slot/:id',auth,async (req,res)=>{
     }
 })
 
+router.patch('/bookingslot/:id',auth,async (req,res)=>{
+    try{
+        const slot = await model.updateOne({emp_id:req.params.id,'slots.slot_time._id':'65ba66f345e1acff202db4b5'},
+        {$set:{ "slots.$.slot_time.$.booked": true }})
+        res.status(200).send(slot)
+    }
+    catch(e){
+        res.status(400).send(e)
+    }
+})
+
 module.exports = router
